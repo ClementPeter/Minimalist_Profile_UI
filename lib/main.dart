@@ -42,21 +42,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(50.0),
-                      //image: const DecorationImage(image: NetworkImage("https://i.pravatar.cc/300"))
+                      
                       image: const DecorationImage(
                         image: AssetImage('images/carlos.png'),
                         //fit: BoxFit.cover,
                       ),
 
-                      //   //shape: BoxShape.circle,
+                   
                     ),
                   ),
-                  // child: CircleAvatar(
-                  //   backgroundColor: Colors.grey,
-                  //   // child: Image.asset('assets/carlos.png'),
-                  //   backgroundImage: AssetImage('assets/carlos.png'),
-                  //   radius: 32.0,
-                  // ),
+                  
                 ),
                 //Name
                 const Padding(
