@@ -34,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                //Profile Pic
                 Padding(
                   padding: const EdgeInsets.only(top: 10, left: 20, right: 20),
                   child: Container(
@@ -42,16 +43,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(50.0),
-                      
                       image: const DecorationImage(
                         image: AssetImage('images/carlos.png'),
                         //fit: BoxFit.cover,
                       ),
-
-                   
                     ),
                   ),
-                  
                 ),
                 //Name
                 const Padding(
@@ -65,7 +62,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                 ),
-
                 //Location
                 const Padding(
                   padding: EdgeInsets.only(left: 20, top: 10),
@@ -169,29 +165,27 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding: const EdgeInsets.only(left: 20, right: 20),
                   height: 220,
                   decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                    //color: Colors.red,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(20.0),
+                    ),
                   ),
-                  //color: Colors.black,
+                  //Height is already specified by Top Container (220)
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
                       Container(
                         width: 200,
-                        //height: 200,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage('images/mclaren.jpg'),
                             fit: BoxFit.cover,
                           ),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                          //color: Colors.red,
                         ),
                       ),
                       const SizedBox(width: 10.0),
                       Container(
                         width: 200,
-                        //height: 200,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage(
@@ -200,13 +194,11 @@ class _MyHomePageState extends State<MyHomePage> {
                             fit: BoxFit.cover,
                           ),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                          //color: Colors.green,
                         ),
                       ),
                       const SizedBox(width: 10.0),
                       Container(
                         width: 200,
-                        //height: 200,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage('images/gow.jpg'),
@@ -218,9 +210,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       const SizedBox(width: 10.0),
                     ],
                   ),
-
-                  //
-                  //
                 ),
                 const SizedBox(height: 10.0),
                 Container(
@@ -228,7 +217,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 100,
                   decoration: const BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                    //color: Colors.red,
                   ),
                   //color: Colors.black,
                   child: ListView(
@@ -236,20 +224,17 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       Container(
                         width: 100,
-                        //height: 200,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage('images/sochi.jpg'),
                             fit: BoxFit.cover,
                           ),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                          //color: Colors.red,
                         ),
                       ),
                       const SizedBox(width: 10.0),
                       Container(
                         width: 100,
-                        //height: 200,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage(
@@ -258,13 +243,11 @@ class _MyHomePageState extends State<MyHomePage> {
                             fit: BoxFit.cover,
                           ),
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                          //color: Colors.green,
                         ),
                       ),
                       const SizedBox(width: 10.0),
                       Container(
                         width: 100,
-                        //height: 200,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage('images/kratos.jpg'),
@@ -274,21 +257,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       const SizedBox(width: 10.0),
-                      // Container(
-                      //   width: 100,
-                      //   //height: 200,
-                      //   decoration: const BoxDecoration(
-                      //     image: DecorationImage(
-                      //       image: AssetImage('images/kratos.jpg'),
-                      //       fit: BoxFit.cover,
-                      //     ),
-                      //     borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      //   ),
-                      // ),
-                      const SizedBox(width: 10.0),
                       Container(
                         width: 100,
-                        //height: 200,
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: AssetImage('images/pyramid.jpg'),
@@ -297,7 +267,6 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         ),
                       ),
-                      //const SizedBox(width: 10.0),
                     ],
                   ),
                 ),
@@ -305,22 +274,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
-                      height: 50,
-                      width: 100,
-                      child: const Center(
-                        child: Icon(Icons.arrow_back),
-                      ),
-                      decoration: BoxDecoration(
-                        color: Colors.grey.withOpacity(0.2),
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(30.0),
+                    GestureDetector(
+                      child: Container(
+                        height: 50,
+                        width: 100,
+                        child: const Center(
+                          child: Icon(Icons.arrow_back),
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.grey.withOpacity(0.2),
+                          borderRadius: const BorderRadius.all(
+                            Radius.circular(30.0),
+                          ),
                         ),
                       ),
                     ),
                     GestureDetector(
-                      //onHover: () {},
-                      //hoverColor: Colors.white,
                       child: Container(
                         height: 50,
                         width: 200,
